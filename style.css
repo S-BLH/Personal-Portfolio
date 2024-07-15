@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #022457, #04132c);
+  color: #fff;
+}
+
+header {
+  background-color: #0f186d;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-text {
+  margin: 10px;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#hamburger-menu {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 0;
+  position: relative;
+}
+
+#mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background-color: #101880;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 300px;
+  text-align: right;
+  z-index: 1;
+}
+
+#mobile-menu.active {
+  display: block;
+}
+
+#mobile-menu li {
+  margin-bottom: 10px;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: #fff;
+}
+
+.buttons {
+  margin-left: auto;
+}
+
+.buttons button {
+  background-color: #4785b7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+section {
+  padding: 0px;
+  margin-right: 10px;
+  margin-left: auto;
+  text-align: right;
+  font-size: small;
+}
+
+.hidden {
+  display: none;
+}
+
+.portfolio-heading-text {
+  text-align: center;
+}
+
+.highlight {
+  color: #427ace;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: center;
+}
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots {
+  display: inline-flex;
+  align-items: center;
+}
+
+.dots::before,
+.dots::after {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+.dots::before {
+  margin-right: 6px;
+}
+
+.dots::after {
+  margin-left: 6px;
+}
