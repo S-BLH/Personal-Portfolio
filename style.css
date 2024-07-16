@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -145,4 +146,39 @@ section {
 
 .blue {
   background-color: rgb(30, 205, 218);
+}
+
+.new-image {
+  float: right;
+  margin-left: 900px;
+  margin-top: 120px;
+  max-width: 300px;
+  border: 1px solid #022457;
+  border-radius: 5px;
+}
+
+.about-content {
+  font-family: Arial, sans-serif; 
+  font-size: 18px; 
+  text-align: left; 
+  margin-left: 20px; 
+  position: absolute; 
+  top: 1250px; 
+  left: 30px; 
+  width: 55%; 
+}
+
+.about-h2 {
+  margin-bottom: 10px; 
+  text-align: left; 
+  font-size: 30px; 
+  position: absolute; 
+  left: 150px; 
+  top: +1150px; 
+}
+
+.about-content {
+  text-align: justify; 
+  text-indent: 20px; 
+  margin-bottom: 15px; 
 }
