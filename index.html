@@ -1,111 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1 class="portfolio-text">Port<span class="highlight">folio</span></h1>
-    <nav>
-      <button id="hamburger-menu">☰</button>
-      <ul id="mobile-menu" class="hidden">
-        <li><a href="#hello" class="menu-item">Hello</a></li>
-        <li><a href="#about" class="menu-item">About</a></li>
-        <li><a href="#work" class="menu-item">My work</a></li>
-        <li><a href="#contact" class="menu-item">Contact</a></li>
-      </ul>
+    <div class="header">
+        <div class="logo">PORTFOLIO</div>
+        <div class="hamburger" onclick="toggleMenu()"> 
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#hello">Hello</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
     </nav>
-  </header>
-  <img class="image" src="eaf940aa97803d14cb08badbf748069a.png" alt="Image" >
-  <section class="hello-section" id="hello">
-  <p class="portfolio-heading-text"><span class="word" style="font-size: 50px;">Hi,</span></p>
-  <p class="portfolio-heading-text">I am Sumita Balouch;</p>
-  <p class="portfolio-heading-text">a trainee in web development class.</p>
-  </section>
-  <img src="eaf940aa97803d14cb08badbf748069a.png" alt="Image" class="surfer-image">
-  <div class="dots-container">
-    <div class="white-line">
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
-      <span class="dot white"></span>
+
+    <div class="content">
+        <h1 class="welcome-text">Welcome to My Portfolio</h1>
     </div>
-    <div class="blue-line">
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-      <span class="dot blue"></span>
-    </div>
+    <div id="hello" class="section hello-section">
+      <div class="hello-content">
+          <div class="particles-container">
+              <div class="particles" id="particles"></div>
+          </div>
+          <div class="profile-image">
+              <img src="Ellipse 27 (1).png" alt="Profile">
+          </div>
+          <h2>Hello,</h2>
+          <p>I am Sumita Balouch, web developer, specializing in product development and responsive web design.</p>
+          <div class="buttons">
+          </div>
+      </div>
   </div>
-  <img src="Screenshot 2024-07-16 193034.png" alt="New Image" class="new-image">
-  <section id="about" class="about-me">
-    <h2 class="about-h2"><span>About me</span></h2>
-    <p class="about-content">My name is Sumita Balouch,
-      I am a trainee in the web development class.
-      I have been learning the fundamental technologies of the web, including HTML, CSS,and JavaScript.
-      I am passionate about building functional and visually appealing websites and web applications.</p>
-  </section>
-  <section class="skills-section" id="skills">
-    <h2 class="skills-heading">Skills</h2>
-    <ul class="skills-list">
-      <li class="skills-item">HTML</li>
-      <li class="skills-item">CSS</li>
-      <li class="skills-item">JavaScript</li>
-      <li class="skills-item">Responsive design</li>
-      <li class="skills-item">Learning Agility</li>
-      <li class="skills-item">Problem Solving</li>
-      <li class="skills-item">TeamWork</li>
-      <li class="skills-item">Version control with (Git & Github)</li>
-      <li class="skills-item">Project Management</li>
-    </ul>
-  </section>
-  <img src="Screenshot 2024-07-17 172009.png" alt="Image" class="fourth-pic">
-  <script src="script.js"></script>
+  <div id="certificateModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Certificate 1</h2>
+        <img id="certificateImage" src="Screenshot 2024-07-13 171451.png" alt="Certificate">
+        <h2>Certificate 2</h2>
+        <img id="certificateImage" src="Screenshot 2024-07-13 171152.png" alt="Certificate">
+    </div>
+</div>
+</div>
+    <div id="about" class="section">
+        <h2>About Me</h2>
+    </div>
+
+    <div id="work" class="section">
+        <h2>My Work</h2>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact Me</h2>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
