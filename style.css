@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -200,4 +201,88 @@ p {
   width: 200px; 
   height: auto;
   margin-right: 1px;
+}
+#about-me {
+  background-color: #0C3C50;
+  color: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  left: 20px;
+  margin-bottom: 20px;
+
+}
+
+.about-title {
+  color: #4DB6AC;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  position: relative;
+}
+
+.about-text {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-right: 90px; 
+}
+
+.about-illustration {
+  position: relative;
+  bottom: 300px;
+  left: 750px;
+  width: 200px; 
+  height: auto;
+}
+
+.skills-section {
+  background-color: #0C3C50;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+}
+.skills-text {
+  flex: 1;
+}
+.soft-skills {
+  flex: 1;
+  margin-left: 20px;
+}
+.skills-image {
+  flex: 0 0 auto;
+  margin-left: 20px;
+}
+.skills-image img {
+  max-width: 150px;
+  height: auto;
+}
+h2 {
+  margin-top: 0;
+}
+h3 {
+  margin-bottom: 5px;
+}
+ol {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+ol li {
+  margin-bottom: 5px;
+} 
+
+.soft-skills {
+  margin-right: 300px;
+}
+
+.skills-image {
+  margin-right: 50px;
+  width: 450px;
 }
