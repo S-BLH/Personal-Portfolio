@@ -133,38 +133,27 @@
     <img src="Group 8.png" alt="imageofdots" class="dots-container">
     <img src="Group 8.png" alt="imageofdots" class="dots-container">
     </section>
+    <section id="my-work"></section>
     <div id="work" class="section">
         <h2>My Work</h2>
-            <section id="my-work">
-                <div id="projects-container">
-                  <div class="project-card">
-                    <h3>Effective</h3>
-                    <p>A web app for a sporting website</p>
-                    <div class="project-image">
-                      <img src="path/to/effective-image.jpg" alt="Effective">
-                    </div>
-                    <div class="project-technologies">
-                      <img src="path/to/html-icon.png" alt="HTML">
-                      <img src="path/to/css-icon.png" alt="CSS">
-                      <img src="path/to/js-icon.png" alt="JavaScript">
-                    </div>
-                    <button class="see-project">See project</button>
-                    <div class="popup hidden">
-                      <button class="close-popup">&times;</button>
-                      <img src="path/to/project-screenshot.jpg" alt="Project Screenshot">
-                      <h3>Technologies Used:</h3>
-                      <div class="popup-technologies">
-                        <img src="path/to/html-icon.png" alt="HTML">
-                        <img src="path/to/css-icon.png" alt="CSS">
-                        <img src="path/to/js-icon.png" alt="JavaScript">
-                      </div>
-                      <div class="popup-links">
-                        <a href="#" class="live-version">Live Version</a>
-                        <a href="#" class="source-code">Source Code</a>
-                      </div>
-                    </div>
-                  </div>
-              </section>
+        <div id="projects-container"></div>
+        <template id="popup-template">
+            <div class="popup">
+                <button class="close-popup">&times;</button>
+                <h3></h3>
+                <div class="popup-image"></div>
+                <div class="popup-technologies"></div>
+                <p class="popup-description"></p>
+                <div class="popup-links">
+                    <a href="#" class="live-version" target="_blank">See Live</a>
+                    <a href="#" class="source-code" target="_blank">See Source</a>
+                </div>
+            </div>
+        </template>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>          
         </div>
     <div id="contact" class="section">
         <h2>Contact Me</h2>
