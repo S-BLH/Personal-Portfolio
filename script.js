@@ -85,40 +85,40 @@ if (!document.querySelector('.button[onclick="showCertificate()"]')) {
 
 const projectsData = [
     {
-        title: "Project 1",
+        title: "Project 1:Survey-form",
         shortDescription: "It is a survey form",
         fullDescription: "A survey form is a structured document or digital interface used to collect information from respondents by asking a series of questions or requesting feedback on specific topics.",
-        technologies: ["html", "css"],
+        technologies: ["Technologies used:","HTML", "CSS"],
         image: "Rectangle 19 (1).png",
         screenshot: "Screenshot 2024-07-14 161407.png",
         liveLink: "https://s-blh.github.io/survey-form/",
         sourceLink: "https://github.com/S-BLH/survey-form"
     },
     {
-        title: "Project 2",
+        title: "Project 2:Palindrome-checker",
         shortDescription: "It is a palindrome checker",
         fullDescription: "A palindrome checker is a program or tool that examines a given word, phrase, or number to determine if it reads the same forward and backward..",
-        technologies: ["html","css" ,"java script"],
+        technologies: ["Technologies used:","HTML","CSS" ,"JAVA SCRIPT"],
         image: "Rectangle 19 (1).png",
         screenshot: "Screenshot 2024-07-14 162352.png",
         liveLink: "https://s-blh.github.io/palindrome-checker/",
         sourceLink: "https://github.com/S-BLH/palindrome-checker"
     },
     {
-        title: "Project 3",
+        title: "Project 3:Cash-register-app",
         shortDescription: "It is a cash register app",
         fullDescription: "A cash register app is a software application that assists in managing and processing retail transactions, such as recording sales, calculating change, and tracking inventory.",
-        technologies: ["HTML", "CSS", "JAVA SCRIPT"],
+        technologies: ["Technologies used:","HTML", "CSS", "JAVA SCRIPT"],
         image: "Rectangle 19 (1).png",
         screenshot: "Screenshot 2024-07-14 162447.png",
         liveLink: "https://s-blh.github.io/cash-register/",
         sourceLink: "https://github.com/S-BLH/cash-register"
     },
     {
-    title: "Project 4",
+    title: "Project 4:Pokemon-search-app",
     shortDescription: "It is a pokemon search app",
     fullDescription: "A Pokémon search app is a mobile or web-based application that allows users to search for information about various Pokémon characters, including their names, types, abilities, and other relevant details.",
-    technologies: ["HTML", "CSS", "JAVA SCRIPT"],
+    technologies: ["Technologies used:","HTML", "CSS", "JAVA SCRIPT"],
     image: "Rectangle 19 (1).png",
     screenshot: "Screenshot 2024-07-14 162531.png",
     liveLink: "https://s-blh.github.io/pokemon-search-app/",
@@ -134,6 +134,19 @@ function createProjectCards() {
     projectsData.forEach((project, index) => {
         const card = document.createElement('div');
         card.className = 'project-card';
+        
+        
+        const techIcons = project.technologies.map(tech => {
+            if (tech.toLowerCase() === 'html') {
+                return '<img src="Group 85.png" alt="HTML" class="tech-icon">';
+            } else if (tech.toLowerCase() === 'css') {
+                return '<img src="Group 83.png" alt="CSS" class="tech-icon">';
+            } else if (tech.toLowerCase() === 'javascript' || tech.toLowerCase() === 'java script') {
+                return '<img src="Group 68.png" alt="JavaScript" class="tech-icon">';
+            }
+            return '';
+        }).join('');
+
         card.innerHTML = `
             <h3>${project.title}</h3>
             <p>${project.shortDescription}</p>
@@ -141,7 +154,7 @@ function createProjectCards() {
                 <img src="${project.image}" alt="${project.title}">
             </div>
             <div class="project-technologies">
-                ${project.technologies.map(tech => `<img src="path/to/${tech}-icon.png" alt="${tech}">`).join('')}
+                ${techIcons}
             </div>
             <button class="see-project" data-project="${index}">See project</button>
         `;
@@ -160,8 +173,8 @@ function setupPopups() {
             
             const popup = popupTemplate.content.cloneNode(true).querySelector('.popup');
             popup.querySelector('h3').textContent = project.title;
-            popup.querySelector('.popup-image').innerHTML = `<img src="${project.image}" alt="${project.title}">`;
-            popup.querySelector('.popup-technologies').innerHTML = project.technologies.map(tech => `<img src="path/to/${tech}-icon.png" alt="${tech}">`).join('');
+            popup.querySelector('.project-screenshot').innerHTML = `<img src="${project.screenshot}" alt="${project.popup}">`;
+            popup.querySelector('.popup-technologies').innerHTML = project.technologies;
             popup.querySelector('.popup-description').textContent = project.fullDescription;
             popup.querySelector('.live-version').href = project.liveLink;
             popup.querySelector('.source-code').href = project.sourceLink;
