@@ -68,7 +68,7 @@ To use this website, you only should have a browser.
 - Email: sumitabalouch@gmail.com
 
 ## Contributing 🤝
-Thanks to my web designer colleagues (Hadia Rauf, Fatana Yaqubi, Froozan Azimi and M arzia Arman), who designed this special Portfolio page for me.
+Thanks to my web designer colleagues (Hadia Rauf, Fatana Yaqubi, Froozan Azimi and Marzia Arman), who designed this special Portfolio page for me.
 
 ## License 📜
 MIT license.
