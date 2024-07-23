@@ -372,7 +372,7 @@ width: 350px;
 height: 175px;
 background-color:  #648796;
 border: 1px solid #648796;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+box-shadow: 0 4px 6px rgba(26, 107, 161, 0.1);
 flex-direction: column;
 border-radius: 10px;
 padding: 20px;
@@ -453,7 +453,7 @@ display: flex;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #1f2937;
+  background-color: #0C3C50;
   padding: 30px;
   border-radius: 10px;
   z-index: 1000;
@@ -534,3 +534,25 @@ display: flex;
   }
 }
 
+footer {
+  background-color: #3c91c9;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1000; 
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #000000;
+  display: inline-block; 
+}
+
+
+.heart {
+  color: rgb(15, 14, 14);
+}
