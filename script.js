@@ -193,3 +193,68 @@ document.addEventListener('DOMContentLoaded', () => {
     createProjectCards();
     setupPopups();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactForm');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    const errorMessage = document.getElementById('errorMessage');
+
+    // Load data from localStorage
+    const savedData = JSON.parse(localStorage.getItem('contactFormData')) || {};
+    nameInput.value = savedData.name || '';
+    emailInput.value = savedData.email || '';
+    messageInput.value = savedData.message || '';
+
+    // Save data to localStorage on input change
+    [nameInput, emailInput, messageInput].forEach(input => {
+        input.addEventListener('input', saveToLocalStorage);
+    });
+
+    function saveToLocalStorage() {
+        const data = {
+            name: nameInput.value,
+            email: emailInput.value.toLowerCase(), // Save email in lowercase
+            message: messageInput.value
+        };
+        localStorage.setItem('contactFormData', JSON.stringify(data));
+    }
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Validate form
+        if (nameInput.value.trim() === '' || emailInput.value.trim() === '' || messageInput.value.trim() === '') {
+            errorMessage.textContent = 'Please fill in all fields.';
+            errorMessage.style.display = 'block';
+            return;
+        }
+
+        // Check if email is in lowercase
+        if (emailInput.value !== emailInput.value.toLowerCase()) {
+            errorMessage.textContent = 'Email must be in lowercase.';
+            errorMessage.style.display = 'block';
+            return;
+        }
+
+        // If validation passes
+        errorMessage.style.display = 'none';
+        console.log('Form submitted:', {
+            name: nameInput.value,
+            email: emailInput.value,
+            message: messageInput.value
+        });
+        
+        // Clear localStorage after successful submission
+        localStorage.removeItem('contactFormData');
+        form.reset();
+    });
+
+    // Convert email to lowercase on blur
+    emailInput.addEventListener('blur', function() {
+        this.value = this.value.toLowerCase();
+    });
+});
+
+
