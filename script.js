@@ -1,17 +1,65 @@
-
+// Toggle menu
 function toggleMenu() {
-  document.querySelector('.menu').classList.toggle('active');
-}
-
-document.querySelectorAll('.menu a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector('.menu').classList.remove('active');
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
+    document.querySelector('.menu')?.classList.toggle('active');
+  }
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const menu = document.querySelector('.menu');
+    const hamburger = document.querySelector('.hamburger-menu'); // Assuming this is your hamburger button
+    if (menu && hamburger && !menu.contains(event.target) && !hamburger.contains(event.target) && menu.classList.contains('active')) {
+      menu.classList.remove('active');
+    }
   });
-});
+  
+  // Handle menu item clicks
+  document.querySelectorAll('.menu a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector('.menu')?.classList.remove('active');
+      const targetId = this.getAttribute('href');
+      document.querySelector(targetId)?.scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+  
+  // Highlight active section
+  function highlightActiveSection() {
+    const sections = document.querySelectorAll('section');
+    const navItems = document.querySelectorAll('.menu a');
+  
+    let currentSection = '';
+  
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+  
+    navItems.forEach(item => {
+      item.classList.remove('active');
+      if (item.getAttribute('href').substring(1) === currentSection) {
+        item.classList.add('active');
+      }
+    });
+  }
+  
+  // Call highlightActiveSection on scroll
+  window.addEventListener('scroll', highlightActiveSection);
+  
+  // Call highlightActiveSection on page load
+  document.addEventListener('DOMContentLoaded', highlightActiveSection);
+  
+  // Close (X) button functionality
+  const closeButton = document.querySelector('.close-menu'); // Assuming you have a close button with class 'close-menu'
+  if (closeButton) {
+    closeButton.addEventListener('click', function() {
+      document.querySelector('.menu')?.classList.remove('active');
+    });
+  } 
 
 function createParticles() {
   const container = document.getElementById('particles');
