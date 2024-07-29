@@ -8,155 +8,163 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-IQscL9VHd3eLDiZKy8jvK2k97SjTjaPCX9x4nKGcGbRnGzG38pWx4D+7dgzjebM" crossorigin="anonymous">
 </head>
 <body>
-    <div class="header">
+    <!-- Header and navigation -->
+    <header class="header">
         <div class="logo">PORTFOLIO</div>
-        <div class="hamburger" onclick="toggleMenu()"> 
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu"> 
             <span></span>
             <span></span>
             <span></span>
+        </button>
+        <nav class="menu">
+            <button class="close-menu" onclick="toggleMenu()" aria-label="Close menu">&times;</button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#hello">Hello</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <h1 class="welcome-text">Welcome to My Portfolio</h1>
         </div>
-    </div>
+        <div class="decorative-images">
+            <img src="Group 8.png" alt="Decorative dots" class="dots-container">
+            <img src="Ellipse 26.png" alt="Corner decoration" class="cornerpic">
+        </div>
 
-    <nav class="menu">
-        <ul>
-            <li><a href="#hello">Hello</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#work">My Work</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
+        <!-- Hello section -->
+        <section id="hello" class="section hello-section">
+            <div class="hello-content">
+                <div class="particles-container">
+                    <div class="particles" id="particles"></div>
+                </div>
+                <div class="profile-image">
+                    <img src="Ellipse 27 (1).png" alt="Profile">
+                </div>
+                <h2>Hello,</h2>
+                <p>I am Sumita Balouch, a web developer, specializing in product development and responsive web design.</p>
+                <div class="buttons">
+                </div>
+            </div>
+        </section>
 
-    <div class="content">
-        <h1 class="welcome-text">Welcome to My Portfolio</h1>
-    </div>
-    <img src="Group 8.png" alt="imageofdots" class="dots-container">
-    <img src="Group 8.png" alt="imageofdots" class="dots-container">
-    <img src="Group 8.png" alt="imageofdots" class="dots-container">
-    <img src="Group 8.png" alt="imageofdots" class="dots-container">
-    <img src="Ellipse 26.png" alt="the other ellipse" class="cornerpic">
-    <div id="hello" class="section hello-section">
-      <div class="hello-content">
-          <div class="particles-container">
-              <div class="particles" id="particles"></div>
-          </div>
-          <div class="profile-image">
-              <img src="Ellipse 27 (1).png" alt="Profile">
-          </div>
-          <h2>Hello,</h2>
-          <p>I am Sumita Balouch,a web developer, specializing in product development and responsive web design.</p>
-          <div class="buttons">
-          </div>
-      </div>
-  </div>
-  <div id="certificateModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Certificate 1</h2>
-        <p>Responsive web design</p>
-        <img id="certificateImage" src="Screenshot 2024-07-13 171451.png" alt="Certificate">
-        <h2>Certificate 2</h2>
-        <p>Java Script Algorithm and Data Structures </p>
-        <img id="certificateImage" src="Screenshot 2024-07-13 171152.png" alt="Certificate">
-    </div>
-</div>
-</div>
-    <img src="Group 8.png" alt="imageofdots" class="dots-container">
-    <img src="Group 8.png" alt="imageofdots" class="dots-container">
-    <img src="Group 8.png" alt="imageofdots" class="dots-container">
-    <img src="Group 8.png" alt="imageofdots" class="dots-container">
-    <img src="Ellipse 26.png" alt="the other ellipse" class="cornerpic">
-    <div id="about" class="section">
-        <section id="about-me">
+        <!-- Certificate Modal -->
+        <div id="certificateModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Certificate 1</h2>
+                <p>Responsive web design</p>
+                <img id="certificateImage1" src="Screenshot 2024-07-13 171451.png" alt="Certificate">
+                <h2>Certificate 2</h2>
+                <p>Java Script Algorithm and Data Structures </p>
+                <img id="certificateImage2" src="Screenshot 2024-07-13 171152.png" alt="Certificate">
+            </div>
+        </div>
+
+        <!-- More decorative images -->
+        <div class="decorative-images">
+            <img src="Group 8.png" alt="Decorative dots" class="dots-container">
+            <img src="Ellipse 26.png" alt="Corner decoration" class="cornerpic">
+        </div>
+
+        <!-- About section -->
+        <section id="about" class="section">
             <h2 class="about-title">About me</h2>
             <div class="about-content">
-                <p class="about-text">My name is Sumita Balouch.
-                    As an aspiring web developer, I have built a strong grasp of the core web technologies -
-                     CSS, JavaScript, and HTML. With expertise in styling, interactivity, and content structuring, 
-                     I am equipped to craft impressive and user-centric websites that captivate audiences.
-                     My web development skills position me to create engaging online experiences.</p>
+                <p class="about-text">My name is Sumita Balouch. As an aspiring web developer, I have built a strong grasp of the core web technologies - CSS, JavaScript, and HTML. With expertise in styling, interactivity, and content structuring, I am equipped to craft impressive and user-centric websites that captivate audiences. My web development skills position me to create engaging online experiences.</p>
                 <img src="6199076_3190341 1.png" alt="Developer Illustration" class="about-illustration">
             </div>
         </section>
-    </div>
-    <section class="skills-section">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skills-text">
-                <div class="skill-category">
-                    <h3>Language:</h3>
+
+        <!-- Skills section -->
+        <section class="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skills-text">
+                    <div class="skill-category">
+                        <h3>Language:</h3>
+                        <ol>
+                            <li>1-JavaScript</li>
+                            <li>2-HTML</li>
+                            <li>3-CSS</li>
+                        </ol>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Professional Skills:</h3>
+                        <ol>
+                            <li>1-Team work</li>
+                            <li>2-project Management</li>
+                            <li>3-Responsive design</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="soft-skills">
+                    <h3>Soft Skills:</h3>
                     <ol>
-                        <li>1-JavaScript</li>
-                        <li>2-HTML</li>
-                        <li>3-CSS</li>
+                        <li>1-GitHub & Git</li>
+                        <li>2-Problem solving</li>
+                        <li>3-Learning Agility</li>
                     </ol>
                 </div>
-                <div class="skill-category">
-                    <h3>Professional Skills:</h3>
-                    <ol>
-                        <li>1-Team work</li>
-                        <li>2-project Management</li>
-                        <li>3-Responsive design</li>
-                    </ol>
+                <div class="skills-image">
+                    <img src="25251927_7083597 1.png" alt="Person working on computer">
                 </div>
             </div>
-            <div class="soft-skills">
-                <h3>Soft Skills:</h3>
-                <ol>
-                    <li>1-GitHub & Git</li>
-                    <li>2-Problem solving</li>
-                    <li>3-Learning Agility</li>
-                </ol>
-            </div>
-            <div class="skills-image">
-                <img src="25251927_7083597 1.png" alt="Person working on computer">
-            </div>
-        </div>
-    </section> 
-    <section class="tech-stack">
-        <div class="language-tags">
-            <div class="tag html">
-                <img src="Group 13.png" alt="HTML icon" class="icon">
-                <span class="text">HTML</span>
-            </div>
-            <div class="tag css">
-                <img src="Group 92.png" alt="CSS icon" class="icon">
-                <span class="text">CSS</span>
-            </div>
-            <div class="tag javascript">
-                <img src="Group 93.png" alt="JavaScript icon" class="icon">
-                <span class="text">JAVA Script</span>
-            </div>
-        </div>
-        <div class="developer-illustration">
-            <img src="OBJECTS.png" alt="Developer working">
-        </div>
-    </section>
-    <img src="Group 8.png" alt="imageofdots" class="dots-container">
-    <img src="Group 8.png" alt="imageofdots" class="dots-container">
-    <img src="Group 8.png" alt="imageofdots" class="dots-container">
-    </section>
-    <section id="my-work"></section>
-    <div id="work" class="section">
-        <h2 class="abt-mywork">My Work</h2>
-        <div id="projects-container"></div>
-        <template id="popup-template">
-            <div class="popup">
-                <button class="close-popup">&times;</button>
-                <h3></h3>
-                <div class="popup-image"></div>
-                <div class="popup-technologies"></div>
-                <div class="project-screenshot"></div>
-                <p class="popup-description"></p>
-                <div class="popup-links">
-                    <a href="#" class="live-version" target="_blank">See Live</a>
-                    <a href="#" class="source-code" target="_blank">See Source</a>
+        </section> 
+
+        <!-- Tech stack section -->
+        <section class="tech-stack">
+            <div class="language-tags">
+                <div class="tag html">
+                    <img src="Group 13.png" alt="HTML icon" class="icon">
+                    <span class="text">HTML</span>
+                </div>
+                <div class="tag css">
+                    <img src="Group 92.png" alt="CSS icon" class="icon">
+                    <span class="text">CSS</span>
+                </div>
+                <div class="tag javascript">
+                    <img src="Group 93.png" alt="JavaScript icon" class="icon">
+                    <span class="text">JAVA Script</span>
                 </div>
             </div>
-        </template>
-    </section> 
+            <div class="developer-illustration">
+                <img src="OBJECTS.png" alt="Developer working">
+            </div>
+        </section>
+
+        <!-- More decorative images -->
+        <div class="decorative-images">
+            <img src="Group 8.png" alt="Decorative dots" class="dots-container">
         </div>
-    <div id="contact" class="section">
-        <section class="contact-section">
+
+        <!-- Work section -->
+        <section id="work" class="section">
+            <h2 class="abt-mywork">My Work</h2>
+            <div id="projects-container"></div>
+            <template id="popup-template">
+                <div class="popup">
+                    <button class="close-popup">&times;</button>
+                    <h3></h3>
+                    <div class="popup-image"></div>
+                    <div class="popup-technologies"></div>
+                    <div class="project-screenshot"></div>
+                    <p class="popup-description"></p>
+                    <div class="popup-links">
+                        <a href="#" class="live-version" target="_blank">See Live</a>
+                        <a href="#" class="source-code" target="_blank">See Source</a>
+                    </div>
+                </div>
+            </template>
+        </section> 
+
+        <!-- Contact section -->
+        <section id="contact" class="section contact-section">
             <div class="wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
@@ -179,14 +187,17 @@
             </div>
             <p id="errorMessage" class="contact-error">Please fill in all fields correctly.</p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=100087160412791&mibextid=LQQJ4d" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="https://github.com/S-BLH" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/sumita-balouch-959197309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100087160412791&mibextid=LQQJ4d" target="_blank" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://github.com/S-BLH" target="_blank" aria-label="GitHub"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sumita-balouch-959197309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
             </div>
         </section>
-    <script src="script.js"></script>
+    </main>
+
     <footer>
         <p>Built with <span class="heart">♥️</span> by Sumita Balouch🕷 🕸</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
