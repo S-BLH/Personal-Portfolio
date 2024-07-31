@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
   margin: 0;
   padding: 0;
@@ -658,5 +659,356 @@ footer p {
 }
 
 .wave .shape-fill {
-fill: #006994;
+  fill: #006994;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .header {
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .menu {
+    width: 250px;
+  }
+
+  .content {
+    padding: 30px 15px;
+  }
+
+  .welcome-text {
+    font-size: 32px;
+  }
+
+  .section {
+    font-size: 22px;
+    padding: 30px 15px;
+  }
+
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+  .modal-content {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  #about-me {
+    padding: 30px;
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-text {
+    margin-right: 0;
+  }
+
+  .about-illustration {
+    width: 200px;
+  }
+
+  .skills-text {
+    margin-right: 20px;
+  }
+
+  .skills-image img {
+    max-width: 200px;
+  }
+
+  .tech-stack {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .language-tags {
+    justify-content: center;
+  }
+
+  .developer-illustration img {
+    max-width: 250px;
+  }
+
+  #projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-card h3 {
+    font-size: 20px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+
+  .project-technologies img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .popup {
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .popup img {
+    max-height: 300px;
+  }
+
+  .popup h3 {
+    font-size: 24px;
+  }
+
+  .popup-technologies img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .popup-description {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  .contact-section {
+    padding: 60px 20px;
+  }
+
+  .contact-title {
+    font-size: 30px;
+  }
+
+  .contact-description {
+    font-size: 16px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-illustration {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-input, .contact-textarea {
+    font-size: 14px;
+  }
+
+  .contact-submit {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    width: 100%;
+    right: 0;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .welcome-text {
+    font-size: 28px;
+  }
+
+  .section {
+    font-size: 20px;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 12px;
+  }
+
+  .modal-content {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  #about-me {
+    padding: 20px;
+  }
+
+  .about-title {
+    font-size: 22px;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-text {
+    margin-right: 0;
+  }
+
+  .about-illustration {
+    width: 150px;
+  }
+
+  .skills-text {
+    margin-right: 0;
+  }
+
+  .skills-image img {
+    max-width: 150px;
+  }
+
+  .tech-stack {
+    padding: 30px;
+  }
+
+  .language-tags {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .developer-illustration img {
+    max-width: 200px;
+  }
+
+  #projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-card h3 {
+    font-size: 18px;
+  }
+
+  .project-card p {
+    font-size: 12px;
+  }
+
+  .project-image {
+    height: 120px;
+  }
+
+  .project-technologies img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .popup {
+    padding: 10px;
+  }
+
+  .popup img {
+    max-height: 250px;
+  }
+
+  .popup h3 {
+    font-size: 20px;
+  }
+
+  .popup-technologies img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .popup-description {
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  .contact-section {
+    padding: 40px 15px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+  }
+
+  .contact-description {
+    font-size: 14px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-illustration {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-input, .contact-textarea {
+    font-size: 14px;
+  }
+
+  .contact-submit {
+    font-size: 14px;
+  }
 }
