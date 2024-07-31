@@ -148,7 +148,47 @@ if (!document.querySelector('.button[onclick="showCertificate()"]')) {
 
 // Project data
 const projectsData = [
-    // ... (your project data here)
+  {
+    title: "Project 1",
+    shortDescription: "It is a survey form",
+    fullDescription: "A survey form is a structured document or digital interface used to collect information from respondents by asking a series of questions or requesting feedback on specific topics.",
+    technologies: ["html", "css"],
+    image: "Rectangle 19 (1).png",
+    screenshot: "Screenshot 2024-07-14 161407.png",
+    liveLink: "https://s-blh.github.io/survey-form/",
+    sourceLink: "https://github.com/S-BLH/survey-form"
+},
+{
+    title: "Project 2",
+    shortDescription: "It is a palindrome checker",
+    fullDescription: "A palindrome checker is a program or tool that examines a given word, phrase, or number to determine if it reads the same forward and backward..",
+    technologies: ["html","css" ,"java script"],
+    image: "Rectangle 19 (1).png",
+    screenshot: "Screenshot 2024-07-14 162352.png",
+    liveLink: "https://s-blh.github.io/palindrome-checker/",
+    sourceLink: "https://github.com/S-BLH/palindrome-checker"
+},
+{
+    title: "Project 3",
+    shortDescription: "It is a cash register app",
+    fullDescription: "A cash register app is a software application that assists in managing and processing retail transactions, such as recording sales, calculating change, and tracking inventory.",
+    technologies: ["HTML", "CSS", "JAVA SCRIPT"],
+    image: "Rectangle 19 (1).png",
+    screenshot: "Screenshot 2024-07-14 162447.png",
+    liveLink: "https://s-blh.github.io/cash-register/",
+    sourceLink: "https://github.com/S-BLH/cash-register"
+},
+{
+title: "Project 4",
+shortDescription: "It is a pokemon search app",
+fullDescription: "A Pokémon search app is a mobile or web-based application that allows users to search for information about various Pokémon characters, including their names, types, abilities, and other relevant details.",
+technologies: ["HTML", "CSS", "JAVA SCRIPT"],
+image: "Rectangle 19 (1).png",
+screenshot: "Screenshot 2024-07-14 162447.png",
+liveLink: "https://s-blh.github.io/pokemon-search-app/",
+sourceLink: "https://github.com/S-BLH/pokemon-search-app"
+},
+
 ];
 
 // Create project cards
