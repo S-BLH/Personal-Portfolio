@@ -4,6 +4,8 @@ function toggleMenu() {
     if (menu) {
       menu.classList.toggle('active');
     }
+      const mobileMenu = document.querySelector('.mobile-menu');
+      mobileMenu.classList.toggle('active');
 }
 
 // Close menu when clicking outside

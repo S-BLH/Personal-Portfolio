@@ -14,6 +14,15 @@
             <span></span>
             <span></span>
         </div>
+        <!-- New desktop menu -->
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="#hello">Hello</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
     </div>
 
     <nav class="menu" id="menu">
@@ -129,9 +138,8 @@
     <img src="Group 8.png" alt="imageofdots" class="dots-container">
     <img src="Group 8.png" alt="imageofdots" class="dots-container">
     </section>
-    <section id="my-work"></section>
-    <div id="work" class="section">
-        <h2 class="abt-mywork">My Work</h2>
+    <section id="my-work">
+        <h2 class="section-title">My work</h2>
         <div id="projects-container"></div>
         <template id="popup-template">
             <div class="popup">
@@ -147,33 +155,49 @@
                 </div>
             </div>
         </template>
-    </section> 
+    </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<div id="contact" class="section">
+    <section class="contact-section">
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
         </div>
-    <div id="contact" class="section">
-        <section class="contact-section">
-            <div class="wave">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
+        <h2 class="contact-title">Contact me</h2>
+        <p class="contact-description">
+            If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it!
+        </p>
+        <div class="contact-content">
+            <div class="contact-illustration">
+                <img src="OBJECTS (1).png" alt="Illustration of person working on computer">
             </div>
-            <h2 class="contact-title">Contact me</h2>
-            <p class="contact-description">
-                If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it!
-            </p>
-            <div class="contact-content">
-                <div class="contact-illustration">
-                    <img src="OBJECTS (1).png" alt="Illustration of person working on computer">
-                </div>
-                <form id="contactForm" class="contact-form">
-                    <input type="text" id="name" class="contact-input" placeholder="Name" maxlength="30" required>
-                    <input type="email" id="email" class="contact-input" placeholder="Email" required>
-                    <textarea id="message" class="contact-textarea" placeholder="Message" maxlength="500" required></textarea>
-                    <button type="submit" class="contact-submit">Submit form</button>
-                </form>
-            </div>
-            <p id="errorMessage" class="contact-error">Please fill in all fields correctly.</p>
-        </section>
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="name" class="contact-input" placeholder="Name" maxlength="30" required>
+                <input type="email" id="email" class="contact-input" placeholder="Email" required>
+                <textarea id="message" class="contact-textarea" placeholder="Message" maxlength="500" required></textarea>
+                <button type="submit" class="contact-submit">Submit form</button>
+            </form>
         </div>
+        <div class="social-icons">
+            <a href="https://github.com/S-BLH" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sumita-balouch-959197309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://m.facebook.com/profile.php?mibextid=LQQJ4d">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </section>
+</div>
     <script src="script.js"></script>
     <footer>
         <p>Built with <span class="heart">♥️</span> by Sumita Balouch🕷 🕸</p>
