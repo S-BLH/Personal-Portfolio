@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <div class="header-container">
     <div class="header">
         <div class="logo">PORTFOLIO</div>
         <div class="hamburger" onclick="toggleMenu()"> 
@@ -23,6 +24,7 @@
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
+    </div>
     </div>
 
     <nav class="menu" id="menu">
@@ -59,8 +61,10 @@
     <div class="modal-content">
         <span class="close">&times;</span>
         <h2>Certificate 1</h2>
+        <p>Responsive Web Design</p>
         <img id="certificateImage" src="Screenshot 2024-07-13 171451.png" alt="Certificate">
         <h2>Certificate 2</h2>
+        <p>Java Script</p>
         <img id="certificateImage" src="Screenshot 2024-07-13 171152.png" alt="Certificate">
     </div>
 </div>
@@ -136,10 +140,10 @@
     </section>
     <img src="Group 8.png" alt="imageofdots" class="dots-container">
     <img src="Group 8.png" alt="imageofdots" class="dots-container">
-    <img src="Group 8.png" alt="imageofdots" class="dots-container">
+    <img src="Ellipse 26.png" alt="the other ellipse" class="cornerpic">
     </section>
-    <section id="my-work">
-        <h2 class="section-title">My work</h2>
+    <div id="work" class="myworksection">
+        <h2 class="abt-mywork">My Work</h2>
         <div id="projects-container"></div>
         <template id="popup-template">
             <div class="popup">
@@ -155,14 +159,10 @@
                 </div>
             </div>
         </template>
-    </section>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </div>
+
     <title>Contact Me</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
 <div id="contact" class="section">
     <section class="contact-section">
         <div class="wave">
