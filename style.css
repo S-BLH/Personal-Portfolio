@@ -8,18 +8,41 @@ body {
   font-size: 16px;
 }
 
+/* Header container styles */
+.header-container {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(135deg, #0C3C50 0%, #254a68 50%, #1b6374 100%);
+  overflow: hidden;
+}
+
+/* Add a pseudo-element for the frosted glass effect */
+.header-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  filter: blur(10px);
+  opacity: 0.7;
+}
+
 /* Header styles */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #0C3C50;
+  position: relative;
+  z-index: 1; /* Ensure header content is above the blur effect */
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  color: white;
 }
 
 /* Desktop menu styles */
@@ -68,11 +91,45 @@ body {
   right: -300px;
   width: 300px;
   height: 100%;
-  background-color: #0A2A3A;
+  background-color: #0C3C50;
   transition: right 0.3s ease;
   z-index: 1000;
 }
 
+.menu.active {
+  right: 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.menu ul li {
+  padding: 15px 20px;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.125rem;
+}
+
+/* Media query for desktop screens */
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none; /* Hide hamburger menu on desktop */
+  }
+
+  .desktop-menu {
+    display: block; /* Show desktop menu */
+  }
+
+  .menu {
+    display: none; /* Hide mobile menu on desktop */
+  }
+}
 .menu.active {
   right: 0;
 }
@@ -456,22 +513,27 @@ ol li {
     max-width: 100%;
   }
 }
-/* My Work section styles */
 
-/* My Work section styles */
+.project-technologies {
+  display: flex;
+  gap: 5px;
+}
+/* My Work Section */
 #my-work {
   background-color: #0C3C50;
-  padding: 60px 20px;
+  padding: 20px;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
 }
 
 #my-work h2 {
-  font-size: 2.25rem;
-  margin-bottom: 30px;
+  width: 100%;
   text-align: left;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 50px;
 }
 
 #projects-container {
@@ -479,198 +541,105 @@ ol li {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .project-card {
   background-color: #1E4D66;
-  border-radius: 10px;
-  padding: 15px;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  aspect-ratio: 10 / 3;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-content {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  aspect-ratio: 12 / 5;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .project-card h3 {
-  color: #7EBCD5
-  100%;
+  color: #7EBCD5;
   font-size: 1.5rem;
   margin: 0 0 10px 0;
   font-weight: normal;
 }
 
-.project-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: left;
-  margin-top: auto;
-}
-
-.project-technologies {
-  display: flex;
-  gap: 5px;
-}
-
-/* My Work section styles */
-#my-work {
-  background-color: #0C3C50;
-  padding: 40px 20px;
-  color: #ffffff;
-}
-
-#my-work h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  text-align: left;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#projects-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.project-card {
-  background-color: #1E4D66;
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.project-content {
-  flex: 1;
-}
-
-.project-card h3 {
-  color: #7EBCD5;
-  font-size: 1.25rem;
-  margin: 0 0 10px 0;
-  font-weight: normal;
-}
-
-.project-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.project-details {
   margin-bottom: 10px;
 }
 
 .project-technologies {
   display: flex;
-  gap: 5px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .project-technologies img {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-
-.project-progress {
   width: 40px;
   height: 40px;
+  border-radius: 50px;
+  padding: 5px;
+  margin-right: 10px;
 }
 
 .see-project {
-  background-color: #4DB6AC;
+  background-color: #648796;
   color: #ffffff;
   border: none;
-  padding: 8px 16px;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border-radius: 50px;
   cursor: pointer;
   font-size: 0.875rem;
-  display: inline-block;
+  display: block;
+  text-align: center;
+  transition: background-color 0.3s;
+  margin: 10px auto 0;
 }
 
 .project-image {
-  width: 100px;
-  height: 100px;
-  margin-left: 20px;
+  width: 50%;
+  height: 100%;
   background-color: #ffffff;
-  border-radius: 5px;
+  border-radius: 15px;
+  order: 2;
 }
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
+@media (max-width: 767px) {
   #projects-container {
-    gap: 15px;
+    grid-template-columns: 1fr;
   }
 
   .project-card {
-    padding: 15px;
-  }
-
-  .project-card h3 {
-    font-size: 1rem;
-  }
-
-  .project-technologies img {
-    width: 18px;
-    height: 18px;
-  }
-
-  .project-progress {
-    width: 35px;
-    height: 35px;
-  }
-
-  .see-project {
-    font-size: 0.8125rem;
-    padding: 6px 12px;
+    flex-direction: column;
+    aspect-ratio: auto;
+    height: auto;
   }
 
   .project-image {
-    width: 80px;
-    height: 80px;
-    margin-left: 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #my-work h2 {
-    font-size: 1.5rem;
+    width: 100%;
+    height: 200px;
+    order: 1;
   }
 
-  #projects-container {
-    gap: 10px;
-  }
-
-  .project-card {
-    padding: 10px;
-  }
-
-  .project-card h3 {
-    font-size: 0.875rem;
-  }
-
-  .project-technologies img {
-    width: 16px;
-    height: 16px;
-  }
-
-  .project-progress {
-    width: 30px;
-    height: 30px;
+  .project-content {
+    order: 2;
+    padding: 20px 0;
+    align-items: center; /* Center align on small screens */
   }
 
   .see-project {
-    font-size: 0.75rem;
-    padding: 5px 10px;
-  }
-
-  .project-image {
-    width: 60px;
-    height: 60px;
-    margin-left: 10px;
+    margin: 10px 0 0 0;
   }
 }
+
 /* Popup styles */
 .popup {
   display: none;
