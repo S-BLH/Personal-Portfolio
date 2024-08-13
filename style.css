@@ -246,7 +246,7 @@ p {
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.6);
-}
+ }
 
 .modal-content {
   background-color: #0a2a3a;
@@ -284,7 +284,7 @@ p {
 /* About Me section styles */
 #about-me {
   background-color: #0c3c50;
-  color: #ffffff;
+  color: #fff;
   padding: 40px;
   border-radius: 10px;
   margin-bottom: 40px;
@@ -320,7 +320,7 @@ p {
   height: auto;
   align-self: flex-end;
 }
-  
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .about-content {
@@ -332,25 +332,20 @@ p {
   }
 }
 
-  .about-illustration {
-      width: 60%;
-      margin-top: 20px;
-      max-width: 200px;
-  }
-
-  .about-title {
-      font-size: 2rem;
-  }
-
+.about-illustration {
+  width: 60%;
+  margin-top: 20px;
+  max-width: 200px;
+}
 
 @media (max-width: 480px) {
   .about-text {
-      margin-left: 0;
-      font-size: 18px;
-      line-height: 1.6;
-      width: 300px;
-      margin: 20px;
-  }
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    width: 300px;
+    margin: 20px;
+ }
 
   .about-illustration {
       width: 100%;
