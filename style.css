@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #0C3C50;
+  background-color: #0c3c50;
   color: white;
   font-size: 16px;
 }
@@ -16,7 +16,6 @@ body {
 .header-container {
   position: relative;
   width: 100%;
-
   overflow: hidden;
 }
 
@@ -95,7 +94,7 @@ body {
   right: -300px;
   width: 300px;
   height: 100%;
-  background-color: #0C3C50;
+  background-color: #0c3c50;
   transition: right 0.3s ease;
   z-index: 1000;
 }
@@ -160,7 +159,7 @@ body {
 
 /* Hello section styles */
 .hello-section {
-  background-color: #0C3C50;
+  background-color: #0c3c50;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,7 +220,7 @@ p {
 }
 
 .button {
-  background-color: #4DB6AC;
+  background-color: #4db6ac;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -250,7 +249,7 @@ p {
 }
 
 .modal-content {
-  background-color: #0A2A3A;
+  background-color: #0a2a3a;
   margin: 15% auto;
   padding: 30px;
   border: 1px solid #888;
@@ -284,8 +283,8 @@ p {
 
 /* About Me section styles */
 #about-me {
-  background-color: #0C3C50;
-  color: #FFFFFF;
+  background-color: #0c3c50;
+  color: #ffffff;
   padding: 40px;
   border-radius: 10px;
   margin-bottom: 40px;
@@ -293,7 +292,7 @@ p {
 }
 
 .about-title {
-  color: #ffffff;
+  color: #fff;
   font-size: 3rem;
   margin-bottom: 20px;
   text-align: left;
@@ -308,32 +307,30 @@ p {
 }
 
 .about-text {
-    font-size: 1.3rem;
-    line-height: 1.7;
-    flex: 1;
-    margin-right: 40px;
-    max-width: 60%;
-  }
-  
-  .about-illustration {
-    width: 35%;
-    max-width: 350px;
-    height: auto;
-    align-self: flex-end;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-right: 0;
-        max-width: 100%;
-    }
-  
+  font-size: 1.3rem;
+  line-height: 1.7;
+  flex: 1;
+  margin-right: 40px;
+  max-width: 60%;
+}
 
+.about-illustration {
+  width: 35%;
+  max-width: 350px;
+  height: auto;
+  align-self: flex-end;
+}
+  
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 0;
+    max-width: 100%;
   }
+}
 
   .about-illustration {
       width: 60%;
