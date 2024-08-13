@@ -81,14 +81,11 @@
         <section id="about-me">
             <h2 class="about-title">About me</h2>
             <div class="about-content">
-                <p class="about-text">My name is Sumita Balouch.
-                    As an aspiring web developer, I have built a strong grasp of the core web technologies -
-                     CSS, JavaScript, and HTML. With expertise in styling, interactivity, and content structuring, 
-                     I am equipped to craft impressive and user-centric websites that captivate audiences.
-                     My web development skills position me to create engaging online experiences.</p>
+                <p class="about-text">My name is Sumita Balouch. I am a trainee in a web development class. I have been learning the fundamental technologies of the web, including HTML, CSS, and JavaScript. I am passionate about building functional and visually appealing websites and web applications.</p>
                 <img src="6199076_3190341 1.png" alt="Developer Illustration" class="about-illustration">
             </div>
         </section>
+        
     </div>
     <section class="skills-section">
         <h2>Skills</h2>
@@ -150,7 +147,23 @@
     </section>
     <div id="work" class="myworksection">
         <h2 class="abt-mywork">My Work</h2>
-        <div id="projects-container"></div>
+        <div id="projects-container">
+            <!-- Example project card -->
+            <div class="project-card">
+                <h3>Effective</h3>
+                <div class="project-year">2024</div>
+                <p class="project-description">A platform for e-learning website</p>
+                <div class="project-technologies">
+                    <img src="path/to/js-icon.png" alt="JavaScript">
+                    <img src="path/to/html-icon.png" alt="HTML5">
+                    <img src="path/to/css-icon.png" alt="CSS3">
+                </div>
+                <img class="project-image" src="path/to/project-image.png" alt="Project Screenshot">
+                <button class="see-project">See project</button>
+            </div>
+            <!-- Repeat the above block for each project -->
+        </div>
+    
         <template id="popup-template">
             <div class="popup">
                 <button class="close-popup">&times;</button>
@@ -166,6 +179,7 @@
             </div>
         </template>
     </div>
+    
 
     <title>Contact Me</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
