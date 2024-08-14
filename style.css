@@ -690,27 +690,13 @@ footer p {
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body, 
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-/* Contact section styles */
-* {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -752,7 +738,7 @@ body, html {
 }
 
 .wave .shape-fill {
-  fill: #0C3C50; 
+  fill: #0c3c50; 
 }
 
 .contact-title {
