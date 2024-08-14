@@ -94,13 +94,6 @@ body {
   transition: all 0.3s ease;
 }
 
-
-.social-icons a {
-  color: white;
-  font-size: 4rem;
-  transition: all 0.3s ease;
-}
-
 .desktop-menu ul li a {
   color: white;
   text-decoration: none;
@@ -764,7 +757,7 @@ html {
 }
 
 .contact-description { 
-  color: #ffffff;
+  color: #fff;
   font-size: 2rem;
   text-align: left;
   max-width: none;
@@ -874,7 +867,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #0C3C50;
+    background-color: #0c3c50;
     color: white;
     font-size: 16px;
   }
@@ -931,4 +924,3 @@ html {
     font-size: 0.875rem;
   }
 }
-
