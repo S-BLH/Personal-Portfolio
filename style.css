@@ -672,22 +672,19 @@ footer {
   padding: 20px 0;
   position: relative;
   width: 100%;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 footer p {
   margin: 0;
   font-size: 1rem;
-  color: #000000;
-  display: inline-block; 
+  color: #000;
+  display: inline-block;
 }
 
 .heart {
   color: #ff4d4d;
 }
-
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
-
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
