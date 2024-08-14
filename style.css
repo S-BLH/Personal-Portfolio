@@ -756,8 +756,7 @@ html {
   margin-top: 10px;
 }
 
-.contact-description 
-{
+ .contact-description {
   color: #fff;
   font-size: 2rem;
   text-align: left;
@@ -873,7 +872,7 @@ html {
     color: white;
     font-size: 16px;
   }
-  
+
   .abt-mywork {
     font-size: 1.8rem;
     margin-bottom: 15px;
