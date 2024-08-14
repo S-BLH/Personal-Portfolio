@@ -245,7 +245,7 @@ p {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.6);
 
 }
 
@@ -394,13 +394,13 @@ ol {
   margin-top: 0;
 }
 
-ol li {
+.ol li {
   margin-bottom: 10px;
-} 
+}
 
 /* Tech stack styles */
 .tech-stack {
-  background-color: #0C3C50;
+  background-color: #0c3c50;
   padding: 100px 80px;
   display: flex;
   justify-content: space-between;
@@ -423,7 +423,7 @@ ol li {
   font-family: Arial, sans-serif;
   font-weight: bold;
   color: white;
-  background-color: #1E3A5F;
+  background-color: #1e3a5f;
   width: 130px;
 }
 
@@ -439,7 +439,7 @@ ol li {
 
 /* Footer styles */
 footer {
-  background-color: #0C3C50;
+  background-color: #0c3c50;
   padding: 20px;
   color: white;
   text-align: center;
@@ -504,11 +504,12 @@ footer .back-to-top:hover {
   display: flex;
   gap: 5px;
 }
+
 /* My Work Section */
 #work {
-  background-color: #0C3C50;
+  background-color: #0c3c50;
   padding: 60px;
-  color: #ffffff;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -519,13 +520,14 @@ footer .back-to-top:hover {
   font-size: 2.5rem;
   font-weight: normal;
   margin: 0;
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 20px;
 }
 
 .project-info {
   margin-left: 0; /* Remove left margin on small screens */
 }
+
 #projects-container {
   flex-direction: column;
   display: grid;
