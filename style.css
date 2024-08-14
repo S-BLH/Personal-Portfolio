@@ -133,6 +133,18 @@ body {
   margin-top: 50px;
 }
 
+.social-icons a {
+  color: white;
+  font-size: 4rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 4rem;
+  transition: all 0.3s ease;
+}
+
 .menu ul li {
   padding: 15px 20px;
 }
@@ -738,11 +750,11 @@ html {
 }
 
 .wave .shape-fill {
-  fill: #0c3c50; 
+  fill: #0c3c50;
 }
 
 .contact-title {
-  color: #ffffff;
+  color: #fff;
   font-size: 2rem;
   text-align: left;
   margin-bottom: 1rem;
@@ -793,7 +805,7 @@ html {
   margin-bottom: 1rem;
   background-color: rgba(250, 249, 249, 0.938);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #000000;
+  color: #000;
   font-size: 1rem;
   border-radius: 5px;
 }
@@ -821,13 +833,6 @@ html {
   gap: 3rem;
   margin-top: 2rem;
   width: 100%;
-  justify-content: center;
-}
-
-.social-icons a {
-  color: white;
-  font-size: 4rem;
-  transition: all 0.3s ease;
 }
 
 /* Responsive adjustments */
