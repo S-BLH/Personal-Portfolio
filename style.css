@@ -320,7 +320,6 @@ p {
   align-self: flex-end;
   width: 60%;
   margin-top: 10px;
-  position: flex;
 }
 
 /* Responsive adjustments */
@@ -334,11 +333,6 @@ p {
   }
 }
 
-.about-illustration {
-  width: 60%;
-  margin-top: 20px;
-  max-width: 200px;
-}
 
 @media (max-width: 480px) {
   .about-text {
@@ -346,7 +340,6 @@ p {
     font-size: 18px;
     line-height: 1.6;
     width: 300px;
-    margin: 20px;
  }
 
   .about-illustration {
