@@ -88,6 +88,19 @@ body {
   justify-content: space-between;
 }
 
+.social-icons a {
+  color: white;
+  font-size: 4rem;
+  transition: all 0.3s ease;
+}
+
+
+.social-icons a {
+  color: white;
+  font-size: 4rem;
+  transition: all 0.3s ease;
+}
+
 .desktop-menu ul li a {
   color: white;
   text-decoration: none;
@@ -131,18 +144,6 @@ body {
   list-style-type: none;
   padding: 0;
   margin-top: 50px;
-}
-
-.social-icons a {
-  color: white;
-  font-size: 4rem;
-  transition: all 0.3s ease;
-}
-
-.social-icons a {
-  color: white;
-  font-size: 4rem;
-  transition: all 0.3s ease;
 }
 
 .menu ul li {
