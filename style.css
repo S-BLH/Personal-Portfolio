@@ -245,7 +245,8 @@ p {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.6);  
+  background-color: rgba(0, 0, 0, 0.6); 
+
 }
 
 .modal-content {
@@ -333,25 +334,23 @@ p {
   }
 }
 
-
 @media (max-width: 480px) {
   .about-text {
     margin-left: 0;
     font-size: 18px;
     line-height: 1.6;
     width: 300px;
- }
+  }
 
   .about-illustration {
-      width: 100%;
-      max-width: 150px;
+    width: 100%;
+    max-width: 150px;
   }
 }
 
-
 /* Skills section styles */
 .skills-section {
-  background-color: #0C3C50;
+  background-color: #0c3c50;
   color: white;
   padding: 40px;
   font-family: Arial, sans-serif;
