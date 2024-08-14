@@ -1,15 +1,15 @@
 // Toggle menu functionality
-function toggleMenu() {
+const toggleMenu = () => {
   const menu = document.querySelector('.menu');
   if (menu) {
     menu.classList.toggle('active');
   }
-    const mobileMenu = document.querySelector('.mobile-menu');
-    mobileMenu.classList.toggle('active');
-}
+  const mobileMenu = document.querySelector('.mobile-menu');
+  mobileMenu.classList.toggle('active');
+};
 
 // Close menu when clicking outside
-document.addEventListener('click', function(event) {
+document.addEventListener('click', (event) => {
   const menu = document.querySelector('.menu');
   const hamburger = document.querySelector('.hamburger-menu');
   if (menu && hamburger && !menu.contains(event.target) && !hamburger.contains(event.target) && menu.classList.contains('active')) {
@@ -18,7 +18,7 @@ document.addEventListener('click', function(event) {
 });
 
 // Handle menu item clicks
-document.querySelectorAll('.menu a').forEach(anchor => {
+document.querySelectorAll('.menu a').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
     const menu = document.querySelector('.menu');
@@ -29,20 +29,20 @@ document.querySelectorAll('.menu a').forEach(anchor => {
     const targetElement = document.querySelector(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
   });
 });
 
 // Highlight active section
-function highlightActiveSection() {
+const highlightActiveSection = () => {
   const sections = document.querySelectorAll('section');
   const navItems = document.querySelectorAll('.menu a');
 
   let currentSection = '';
 
-  sections.forEach(section => {
+  sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
     if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
@@ -50,13 +50,13 @@ function highlightActiveSection() {
     }
   });
 
-  navItems.forEach(item => {
+  navItems.forEach((item) => {
     item.classList.remove('active');
     if (item.getAttribute('href').substring(1) === currentSection) {
       item.classList.add('active');
     }
   });
-}
+};
 
 // Call highlightActiveSection on scroll and page load
 window.addEventListener('scroll', highlightActiveSection);
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', highlightActiveSection);
 // Close (X) button functionality
 const closeButton = document.querySelector('.close-menu');
 if (closeButton) {
-  closeButton.addEventListener('click', function() {
+  closeButton.addEventListener('click', () => {
     const menu = document.querySelector('.menu');
     if (menu) {
       menu.classList.remove('active');
@@ -74,23 +74,23 @@ if (closeButton) {
 }
 
 // Create particles
-function createParticles() {
+const createParticles = () => {
   const container = document.getElementById('particles');
   if (container) {
     for (let i = 0; i < 20; i++) {
-      let particle = document.createElement('div');
+      const particle = document.createElement('div');
       particle.classList.add('particle');
-      particle.style.width = Math.random() * 5 + 'px';
+      particle.style.width = `${Math.random() * 5}px`;
       particle.style.height = particle.style.width;
-      particle.style.left = Math.random() * 100 + '%';
-      particle.style.top = Math.random() * 100 + '%';
+      particle.style.left = `${Math.random() * 100}%`;
+      particle.style.top = `${Math.random() * 100}%`;
       particle.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
       particle.style.borderRadius = '50%';
       particle.style.position = 'absolute';
       container.appendChild(particle);
     }
   }
-}
+};
 
 document.addEventListener('DOMContentLoaded', createParticles);
 
