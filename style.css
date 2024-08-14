@@ -53,6 +53,16 @@ body {
   display: none; /* Hidden by default */
 }
 
+.popup-links a {
+  color: #60a5fa;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: 1px solid #60a5fa;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+}
+
 .desktop-menu ul {
   list-style-type: none;
   padding: 0;
@@ -648,16 +658,6 @@ ol {
   color: #d1d5db;
   line-height: 1.8;
   font-size: 1.125rem;
-}
-
-.popup-links a {
-  color: #60a5fa;
-  text-decoration: none;
-  padding: 12px 24px;
-  border: 1px solid #60a5fa;
-  border-radius: 25px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-size: 1rem;
 }
 
 .popup-links a:hover {
