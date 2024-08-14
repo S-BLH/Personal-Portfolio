@@ -246,7 +246,6 @@ p {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.6);
-
 }
 
 .modal-content {
@@ -469,7 +468,7 @@ footer {
 footer p {
   margin: 0;
   font-size: 1rem;
-  color: #cccccc;
+  color: #ccc;
   margin-top: 20px;
 }
 
@@ -498,11 +497,6 @@ footer .back-to-top:hover {
   .developer-illustration {
     max-width: 100%;
   }
-}
-
-.project-technologies {
-  display: flex;
-  gap: 5px;
 }
 
 /* My Work Section */
@@ -541,7 +535,7 @@ footer .back-to-top:hover {
 }
 
 .project-card {
-  background-color: #1E4D66;
+  background-color: #1e4d66;
   border-radius: 20px;
   padding: 10px;
   display: flex;
@@ -559,7 +553,7 @@ footer .back-to-top:hover {
 }
 
 .project-card h3 {
-  color: #ffffff;
+  color: #fff;
   font-size: 1.75rem;
   margin-bottom: 10px;
 }
@@ -576,12 +570,12 @@ footer .back-to-top:hover {
   content: '•';
   font-size: 1.5rem;
   margin-right: 5px;
-  color: #7EBCD5;
+  color: #7ebcd5;
 }
 
 .project-card .project-description {
   font-size: 1rem;
-  color: #DDE9F0;
+  color: #dde9f0;
   margin-bottom: 20px;
   margin-right: -500px;
 }
