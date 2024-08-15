@@ -201,12 +201,12 @@ function createProjectCards() {
     projectsData.forEach((project, index) => {
       const card = document.createElement('div');
       card.className = 'project-card';
-      const techIcons = project.technologies.map(tech => {
+      const techIcons = project.technologies.map((tech) => {
         if (tech.toLowerCase() === 'html') {
           return '<img src="Group 85.png" alt="HTML" class="tech-icon">';
-        } else if (tech.toLowerCase() === 'css') {
+        } {
           return '<img src="Group 83.png" alt="CSS" class="tech-icon">';
-        } else if (tech.toLowerCase() === 'javascript' || tech.toLowerCase() === 'java script') {
+        }  {
           return '<img src="Group 68.png" alt="JavaScript" class="tech-icon">';
         }
         return '';
@@ -232,13 +232,11 @@ function createProjectCards() {
 function setupPopups() {
   const container = document.getElementById('projects-container');
   const popupTemplate = document.getElementById('popup-template');
-  
   if (container && popupTemplate) {
     container.addEventListener('click', (e) => {
       if (e.target.classList.contains('see-project')) {
         const projectIndex = e.target.dataset.project;
         const project = projectsData[projectIndex];
-        
         const popup = popupTemplate.content.cloneNode(true).querySelector('.popup');
         popup.querySelector('h3').textContent = project.title;
         popup.querySelector('.project-screenshot').innerHTML = `<img src="${project.screenshot}" alt="${project.popup}">`;
@@ -246,10 +244,8 @@ function setupPopups() {
         popup.querySelector('.popup-description').textContent = project.fullDescription;
         popup.querySelector('.live-version').href = project.liveLink;
         popup.querySelector('.source-code').href = project.sourceLink;
-        
         document.body.appendChild(popup);
         popup.classList.add('active');
-        
         popup.querySelector('.close-popup').addEventListener('click', () => {
           popup.remove();
         });
