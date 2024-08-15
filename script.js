@@ -204,9 +204,11 @@ function createProjectCards() {
       const techIcons = project.technologies.map((tech) => {
         if (tech.toLowerCase() === 'html') {
           return '<img src="Group 85.png" alt="HTML" class="tech-icon">';
-        } {
+        }
+        if (tech.toLowerCase() === 'css') {
           return '<img src="Group 83.png" alt="CSS" class="tech-icon">';
-        }  {
+        }
+        if (tech.toLowerCase() === 'javascript' || tech.toLowerCase() === 'java script') {
           return '<img src="Group 68.png" alt="JavaScript" class="tech-icon">';
         }
         return '';
@@ -261,12 +263,21 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Contact form functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
   const nameInput = document.getElementById('name');
   const emailInput = document.getElementById('email');
   const messageInput = document.getElementById('message');
   const errorMessage = document.getElementById('errorMessage');
+
+  function saveToLocalStorage() {
+    const data = {
+      name: nameInput ? nameInput.value : '',
+      email: emailInput ? emailInput.value.toLowerCase() : '',
+      message: messageInput ? messageInput.value : '',
+    };
+    localStorage.setItem('contactFormData', JSON.stringify(data));
+  }
 
   // Load data from localStorage
   const savedData = JSON.parse(localStorage.getItem('contactFormData')) || {};
@@ -275,30 +286,21 @@ document.addEventListener('DOMContentLoaded', function() {
   if (messageInput) messageInput.value = savedData.message || '';
 
   // Save data to localStorage on input change
-  [nameInput, emailInput, messageInput].forEach(input => {
+  [nameInput, emailInput, messageInput].forEach((input) => {
     if (input) {
       input.addEventListener('input', saveToLocalStorage);
     }
   });
 
-  function saveToLocalStorage() {
-    const data = {
-      name: nameInput ? nameInput.value : '',
-      email: emailInput ? emailInput.value.toLowerCase() : '',
-      message: messageInput ? messageInput.value : ''
-    };
-    localStorage.setItem('contactFormData', JSON.stringify(data));
-  }
-
   if (form) {
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', (e) => {
       e.preventDefault();
       
       // Validate form
-      if (!nameInput || !emailInput || !messageInput || 
-          nameInput.value.trim() === '' || 
-          emailInput.value.trim() === '' || 
-          messageInput.value.trim() === '') {
+      if (!nameInput || !emailInput || !messageInput
+          || nameInput.value.trim() === ''
+          || emailInput.value.trim() === ''
+          || messageInput.value.trim() === '') {
         if (errorMessage) {
           errorMessage.textContent = 'Please fill in all fields.';
           errorMessage.style.display = 'block';
@@ -319,10 +321,11 @@ document.addEventListener('DOMContentLoaded', function() {
       if (errorMessage) {
         errorMessage.style.display = 'none';
       }
+      // eslint-disable-next-line no-console
       console.log('Form submitted:', {
         name: nameInput.value,
         email: emailInput.value,
-        message: messageInput.value
+        message: messageInput.value,
       });
       
       // Clear localStorage after successful submission
@@ -333,7 +336,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Convert email to lowercase on blur
   if (emailInput) {
-    emailInput.addEventListener('blur', function() {
+    emailInput.addEventListener('blur', function () {
       this.value = this.value.toLowerCase();
     });
   }
