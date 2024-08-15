@@ -19,13 +19,13 @@ document.addEventListener('click', (event) => {
 
 // Handle menu item clicks
 document.querySelectorAll('.menu a').forEach((anchor) => {
-  anchor.addEventListener('click', function (e) {
+  anchor.addEventListener('click', (e) => {
     e.preventDefault();
     const menu = document.querySelector('.menu');
     if (menu) {
       menu.classList.remove('active');
     }
-    const targetId = this.getAttribute('href');
+    const targetId = anchor.getAttribute('href');
     const targetElement = document.querySelector(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({
@@ -77,7 +77,7 @@ if (closeButton) {
 const createParticles = () => {
   const container = document.getElementById('particles');
   if (container) {
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 20; i += 1) {
       const particle = document.createElement('div');
       particle.classList.add('particle');
       particle.style.width = `${Math.random() * 5}px`;
@@ -102,30 +102,30 @@ const closeBtns = document.querySelectorAll('.close');
 function openModal(modalId) {
   const modal = document.getElementById(modalId);
   if (modal) {
-    modal.style.display = "block";
+    modal.style.display = 'block';
   }
 }
 
 function closeModal(modal) {
-  modal.style.display = "none";
+  modal.style.display = 'none';
 }
 
-buttons.forEach(button => {
-  button.addEventListener('click', function() {
-    const modalId = this.textContent.toLowerCase() + 'Modal';
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modalId = `${button.textContent.toLowerCase()}Modal`;
     openModal(modalId);
   });
 });
 
-closeBtns.forEach(btn => {
-  btn.addEventListener('click', function() {
-    closeModal(this.closest('.modal'));
+closeBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    closeModal(btn.closest('.modal'));
   });
 });
 
-window.addEventListener('click', function(event) {
-  modals.forEach(modal => {
-    if (event.target == modal) {
+window.addEventListener('click', (event) => {
+  modals.forEach((modal) => {
+    if (event.target === modal) {
       closeModal(modal);
     }
   });
@@ -150,16 +150,16 @@ if (!document.querySelector('.button[onclick="showCertificate()"]')) {
 
 // Project data
 const projectsData = [
-{
-  title: "Project 1",
-  shortDescription: "It is a survey form",
-  fullDescription: "A survey form is a structured document or digital interface used to collect information from respondents by asking a series of questions or requesting feedback on specific topics.",
-  technologies: ["html", "css"],
-  image: "Rectangle 19 (1).png",
-  screenshot: "Screenshot 2024-07-14 161407.png",
-  liveLink: "https://s-blh.github.io/survey-form/",
-  sourceLink: "https://github.com/S-BLH/survey-form"
-},
+  {
+    title: 'Project 1',
+    shortDescription: 'It is a survey form',
+    fullDescription: 'A survey form is a structured document or digital interface used to collect information from respondents by asking a series of questions or requesting feedback on specific topics.',
+    technologies: ['html', 'css'],
+    image: 'Rectangle 19 (1).png',
+    screenshot: 'Screenshot 2024-07-14 161407.png',
+    liveLink: 'https://s-blh.github.io/survey-form/',
+    sourceLink: 'https://github.com/S-BLH/survey-form'
+  },
 {
   title: "Project 2",
   shortDescription: "It is a palindrome checker",
