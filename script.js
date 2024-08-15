@@ -161,16 +161,16 @@ const projectsData = [
     sourceLink: 'https://github.com/S-BLH/survey-form',
   },
   {
-    title: "Project 2",
+    title: 'Project 2',
     shortDescription: 'It is a palindrome checker',
     fullDescription: 'A palindrome checker is a program or tool that examines a given word, phrase, or number to determine if it reads the same forward and backward..',
-    technologies: ['html','css' ,'java script'],
+    technologies: ['html', 'css', 'java script'],
     image: 'Rectangle 19 (1).png',
     screenshot: 'Screenshot 2024-07-14 162352.png',
     liveLink: 'https://s-blh.github.io/palindrome-checker/',
-    sourceLink: 'https://github.com/S-BLH/palindrome-checker'
+    sourceLink: 'https://github.com/S-BLH/palindrome-checker',
   },
- {
+  {
     title: 'Project 3',
     shortDescription: 'It is a cash register app',
     fullDescription: 'A cash register app is a software application that assists in managing and processing retail transactions, such as recording sales, calculating change, and tracking inventory.',
@@ -178,9 +178,9 @@ const projectsData = [
     image: 'Rectangle 19 (1).png',
     screenshot: 'Screenshot 2024-07-14 162447.png',
     liveLink: 'https://s-blh.github.io/cash-register/',
-    sourceLink: 'https://github.com/S-BLH/cash-register'
- },
- {
+    sourceLink: 'https://github.com/S-BLH/cash-register',
+  },
+  {
     title: 'Project 4',
     shortDescription: 'It is a pokemon search app',
     fullDescription: 'A Pokémon search app is a mobile or web-based application that allows users to search for information about various Pokémon characters, including their names, types, abilities, and other relevant details.',
@@ -188,7 +188,7 @@ const projectsData = [
     image: 'Rectangle 19 (1).png',
     screenshot: 'Screenshot 2024-07-14 162447.png',
     liveLink: 'https://s-blh.github.io/pokemon-search-app/',
-    sourceLink: 'https://github.com/S-BLH/pokemon-search-app'
+    sourceLink: 'https://github.com/S-BLH/pokemon-search-app',
   },
 
 ];
@@ -198,11 +198,9 @@ function createProjectCards() {
   const container = document.getElementById('projects-container');
   if (container) {
     container.innerHTML = '';
-    
     projectsData.forEach((project, index) => {
       const card = document.createElement('div');
       card.className = 'project-card';
-      
       const techIcons = project.technologies.map(tech => {
         if (tech.toLowerCase() === 'html') {
           return '<img src="Group 85.png" alt="HTML" class="tech-icon">';
