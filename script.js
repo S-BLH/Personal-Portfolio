@@ -295,7 +295,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      
       // Validate form
       if (!nameInput || !emailInput || !messageInput
           || nameInput.value.trim() === ''
@@ -327,7 +326,6 @@ document.addEventListener('DOMContentLoaded', () => {
         email: emailInput.value,
         message: messageInput.value,
       });
-      
       // Clear localStorage after successful submission
       localStorage.removeItem('contactFormData');
       form.reset();
