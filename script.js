@@ -8,6 +8,14 @@ const toggleMenu = () => {
   mobileMenu.classList.toggle('active');
 };
 
+// Add an event listener to a button or element that should trigger the menu toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggleButton = document.querySelector('#menu-toggle-button'); // Replace with your actual button ID or selector
+  if (menuToggleButton) {
+    menuToggleButton.addEventListener('click', toggleMenu);
+  }
+});
+
 // Close menu when clicking outside
 document.addEventListener('click', (event) => {
   const menu = document.querySelector('.menu');
