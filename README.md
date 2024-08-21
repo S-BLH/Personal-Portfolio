@@ -73,3 +73,4 @@ Thanks to my web designer colleagues (Hadia Rauf, Fatana Yaqubi, Froozan Azimi a
 ## License 📜
 MIT license.
 
+## figma design: https://www.figma.com/design/XSzDERvITSkhLuc2p9Qp0t/Untitled?node-id=0-1&t=e2Zc45Z3C8YLTFkN-1
