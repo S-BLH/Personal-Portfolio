@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="header-container">
+    
+        <div class="header">
+            <div class="logo">PORTFOLIO</div>
+            <div class="hamburger" onclick="toggleMenu()"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- New desktop menu -->
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="#hello">Hello</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#work">My Work</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+          
+        </div>
+    </div>
+    
+    <nav class="menu" id="menu">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <ul>
+            <li><a href="#hello">Hello</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1 class="welcome-text">Welcome to My Portfolio</h1>
+    </div>
+    <img src="Group 8.png" alt="imageofdots" class="dots-container">
+    <img src="Group 8.png" alt="imageofdots" class="dots-container">
+    <img src="Ellipse 26.png" alt="the other ellipse" class="cornerpic">
+    <div id="hello" class="section hello-section">
+      <div class="hello-content">
+          <div class="particles-container">
+              <div class="particles" id="particles"></div>
+          </div>
+          <div class="profile-image">
+              <img src="Ellipse 27 (1).png" alt="Profile">
+          </div>
+          <h2>Hello,</h2>
+          <p>I am Sumita Balouch,a web developer, specializing in product development and responsive web design.</p>
+          <div class="buttons">
+          </div>
+      </div>
+  </div>
+  <div id="certificateModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Certificate 1</h2>
+        <p>Responsive Web Design</p>
+        <a  rel="noopener" href="https://www.freecodecamp.org/certification/S---blh/responsive-web-design" target="_blank">View Certificate 1</a>
+        <img id="certificateImage" src="Screenshot 2024-07-13 171451.png" alt="Certificate">
+        <h2>Certificate 2</h2>
+        <p>Java Script</p>
+        <a rel="noopener" href="https://www.freecodecamp.org/certification/S---blh/javascript-algorithms-and-data-structures-v8" target="_blank">View Certificate 1</a>
+        <img id="certificateImage" src="Screenshot 2024-07-13 171152.png" alt="Certificate">
+    </div>
+</div>
+</div>
+    <img src="Group 8.png" alt="imageofdots" class="dots-container">
+    <img src="Group 8.png" alt="imageofdots" class="dots-container">
+    <img src="Group 8.png" alt="imageofdots" class="dots-container">
+    <img src="Ellipse 26.png" alt="the other ellipse" class="cornerpic">
+    <div id="about" class="section">
+        <section id="about-me">
+            <h2 class="about-title">About me</h2>
+            <div class="about-content">
+                <p class="about-text">My name is Sumita Balouch. I am a trainee in a web development class. I have been learning the fundamental technologies of the web, including HTML, CSS, and JavaScript. I am passionate about building functional and visually appealing websites and web applications.</p>
+                <img src="6199076_3190341 1.png" alt="Developer Illustration" class="about-illustration">
+            </div>
+        </section>
+        
+    </div>
+    <section class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skills-text">
+                <div class="skill-category">
+                    <h3>Language:</h3>
+                    <ol>
+                        <li>1-JavaScript</li>
+                        <li>2-HTML</li>
+                        <li>3-CSS</li>
+                    </ol>
+                </div>
+                <div class="skill-category">
+                    <h3>Professional Skills:</h3>
+                    <ol>
+                        <li>1-Team work</li>
+                        <li>2-project Management</li>
+                        <li>3-Responsive design</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="soft-skills">
+                <h3>Soft Skills:</h3>
+                <ol>
+                    <li>1-GitHub & Git</li>
+                    <li>2-Problem solving</li>
+                    <li>3-Learning Agility</li>
+                </ol>
+            </div>
+            <div class="skills-image">
+                <img src="25251927_7083597 1.png" alt="Person working on computer">
+            </div>
+        </div>
+    </section> 
+    <section class="tech-stack">
+        <div class="language-tags">
+            <div class="tag html">
+                <img src="Group 85.png" alt="HTML icon" class="icon">
+                <span class="text">HTML</span>
+            </div>
+            <div class="tag css">
+                <img src="Group 83.png" alt="CSS icon" class="icon">
+                <span class="text">CSS</span>
+            </div>
+            <div class="tag javascript">
+                <img src="Group 68.png" alt="JavaScript icon" class="icon">
+                <span class="text">JAVA Script</span>
+            </div>
+        </div>
+        <div class="developer-illustration">
+            <img src="OBJECTS.png" alt="Developer working">
+        </div>
+    </section>
+    <img src="Group 8.png" alt="imageofdots" class="dots-container">
+    <img src="Group 8.png" alt="imageofdots" class="dots-container">
+    <img src="Group 8.png" alt="imageofdots" class="dots-container">
+    <img src="Ellipse 26.png" alt="the other ellipse" class="cornerpic">
+    </section>
+    <div id="work" class="myworksection">
+        <h2 class="abt-mywork">My Work</h2>
+        <div id="projects-container">
+            <!-- project card -->
+            <div class="project-card">
+                <h3>Effective</h3>
+                <div class="project-year">2024</div>
+                <p class="project-description">A platform for e-learning website</p>
+                <div class="project-technologies">
+                    <img src="path/to/js-icon.png" alt="JavaScript">
+                    <img src="path/to/html-icon.png" alt="HTML5">
+                    <img src="path/to/css-icon.png" alt="CSS3">
+                </div>
+                <img class="project-image" src="path/to/project-image.png" alt="Project Screenshot">
+                <button class="see-project" type="button">See project</button>
+            </div>
+        </div>
+    
+        <template id="popup-template">
+            <div class="popup">
+                <button class="close-popup">&times;</button>
+                <h3></h3>
+                <div class="popup-image"></div>
+                <div class="popup-technologies"></div>
+                <div class="project-screenshot"></div>
+                <p class="popup-description"></p>
+                <div class="popup-links">
+                    <a rel="noopener" href="#" class="live-version" target="_blank">See Live</a>
+                    <a  rel="noopener" href="#" class="source-code" target="_blank">See Source</a>
+                </div>
+            </div>
+        </template>
+    </div>
+    
+
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<div id="contact" class="contactmesection">
+    <section class="contact-section">
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <h2 class="contact-title">Contact me</h2>
+        <p class="contact-description">
+            If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it!
+        </p>
+        <div class="contact-content">
+            <div class="contact-illustration">
+                <img src="OBJECTS (1).png" alt="Illustration of person working on computer">
+            </div>
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="name" class="contact-input" placeholder="Name" maxlength="30" required>
+                <input type="email" id="email" class="contact-input" placeholder="Email" required>
+                <textarea id="message" class="contact-textarea" placeholder="Message" maxlength="500" required></textarea>
+                <button type="submit" class="contact-submit">Submit form</button>
+            </form>
+        </div>
+        <div class="social-icons">
+            <a rel="noopener" href="https://github.com/S-BLH" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+            <a  rel="noopener" href="https://www.linkedin.com/in/sumita-balouch-959197309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a rel="noopener" href="https://m.facebook.com/profile.php?mibextid=LQQJ4d">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </section>
+</div>
+    <script src="script.js"></script>
+    <footer>
+        <p>Built with <span class="heart">♥️</span> by Sumita Balouch🕷 🕸</p>
+    </footer>
+</body>
+</html>
